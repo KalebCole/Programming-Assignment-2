@@ -1,4 +1,18 @@
-/* .main-div{
+#mainDiv{
     margin: auto auto;
-    width: 50%;
-} */
+    width: fit-content;
+}
+
+#listDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+#navigationBar li{
+    display: inline;
+    margin: 10px 10px;
+}
