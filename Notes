@@ -1,0 +1,76 @@
+Main div will center all the css
+
+List div:
+throw at least 3 items into it 
+Main goal: to use <ul>
+Must have a border and distinguised so you can see its layout
+Extra Credit: Add JS to animated GIF with animated pinwheel for loading that will fill in the list with something
+    Fill in the list dynamically
+
+
+Error Message
+Set to invisible or none: difference = none has no space
+
+Extra credit: Make a button look like an X using CSS only when it is present to close it
+- onclick, make it hidden
+
+
+Needs to validate 2 properties --> have a function to do this
+1. Name field (null)
+2. Age 1 < x < 100
+
+ways to do it:
+1. Have 2 error messages
+2. Have 1 central one and fill it in dynamically with the variable (name,age)
+
+
+Data Entry Div
+
+Important: Must go to Success.html
+
+Submit button: <input type="submit">
+
+
+
+
+- Make a folder with the following files
+    - Index.html
+    - Bootstrap.html
+    - Success.html
+    - A JavaScript file
+    - A CSS file
+- Requirements
+    - Main content DIV
+        - Should contain all the other content.
+        - Centered in the browser using CSS.
+    - List DIV
+        - Should have an unordered list of at least three items in it.
+        - CSS:  Should have visible borders of some kind.
+        - EXTRA CREDIT:  Start with some kind of “loading” display and fill in the list on a button press (this could simulate fetching data to load the list).
+    - Error message DIV
+        - CSS:  Should have visible borders of some kind.
+        - Should start out invisible/hidden.
+        - CSS:  Should have bold red text.
+        - Contain a button to close/hide the DIV.
+            - EXTRA CREDIT:  Make the button look like an X in the top right corner of the DIV.
+        - Should display an error message depending on error.
+            - Name is a required field.
+            - Age must be a number between 1 and 100.
+    - Data entry DIV
+        - CSS:  Should have visible borders of some kind.
+        - Should contain a FORM
+            - FORM should do a get or post to success.html.
+            - Name input
+                - Required field, can’t be null or empty.
+            - Age input
+                - Must have a value and must be between 1 and 100.
+            - Some kind of submit button
+            - Data validation
+                - Choose one of the ways we discussed in class to handle form validatation and display an error message and NOT go to success.html when there is an error.
+    - Bootstrap layout
+    - Make a copy of your Index.html file in the Bootstrap.html file.
+    - I only care about the layout here so if you break functionality don’t worry about it.
+    - Remove your own CSS link and class names on any elements.
+    - Link Bootstrap CSS.
+    - Decorate your DIVS etc. with Bootstrap classes to achieve the following layout:
+    ![image](file:///G:/My%20Drive/03_Reference%20Documents/01_Chrome_Downloads/client-side%20foundations%20bootstrap.png)

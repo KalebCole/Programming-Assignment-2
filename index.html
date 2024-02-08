@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <!-- center this by width: fit-content, margin: auto auto -->
+    <div id="mainDiv">
+        <div id="listDiv">
+            <!-- on load, I will have a loading icon show and then  -->
+            <ul id="navigationBar">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        
+
+        <div id="loadingButtonDiv">
+            <button id="loadingButton">Loading</button>
+        </div>
+
+        <div id="errorMessageDiv">
+
+            <div id="errorDiv">
+                <!-- this will be generated in the javascript -->
+                <p id="errorMessage"></p>
+            </div>
+
+            <div id="dataEntryDiv">
+                <!-- validate this in the javascript and it will load the error message -->
+                <form action="./Success.html">
+                    <div id="nameField">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div id="ageField">
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age">
+                    </div>
+                    <input type="button" value="Submit">
+                </form>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+</body>
+
+</html>
