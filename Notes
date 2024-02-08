@@ -1,9 +1,12 @@
-Main div will center all the css
+To Do
 
-List div:
-throw at least 3 items into it 
-Main goal: to use <ul>
-Must have a border and distinguised so you can see its layout
+
+X Main div will center all the css 
+
+X List div:
+X throw at least 3 items into it 
+X Main goal: to use <ul>
+X Must have a border and distinguised so you can see its layout
 Extra Credit: Add JS to animated GIF with animated pinwheel for loading that will fill in the list with something
     Fill in the list dynamically
 

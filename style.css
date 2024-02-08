@@ -16,3 +16,10 @@
     display: inline;
     margin: 10px 10px;
 }
+
+#errorMessageDiv{
+    display: hidden;
+    border: black 1px solid;
+    color: red;
+    
+}

@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <!-- center this by width: fit-content, margin: auto auto -->
     <div id="mainDiv">
         <div id="listDiv">
             <!-- on load, I will have a loading icon show and then  -->
@@ -27,27 +26,24 @@
         </div>
 
         <div id="errorMessageDiv">
-
-            <div id="errorDiv">
                 <!-- this will be generated in the javascript -->
                 <p id="errorMessage"></p>
-            </div>
-
+        </div>
             <div id="dataEntryDiv">
                 <!-- validate this in the javascript and it will load the error message -->
                 <form action="./Success.html">
-                    <div id="nameField">
+                    <div id="nameDiv">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
                     </div>
-                    <div id="ageField">
+                    <div id="ageDiv">
                         <label for="age">Age:</label>
                         <input type="text" id="age" name="age">
                     </div>
                     <input type="button" value="Submit">
                 </form>
             </div>
-        </div>
+        
         <script src="./main.js"></script>
 </body>
 
