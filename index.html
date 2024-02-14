@@ -11,6 +11,10 @@
 <body>
     <div id="mainDiv">
         <div id="listDiv">
+            <!-- <div class="tenor-gif-embed" data-postid="19812323" data-share-method="host" data-aspect-ratio="1"
+                    data-width="100%"><a href="https://tenor.com/view/dddd-gif-19812323">Dddd GIF</a>from <a
+                        href="https://tenor.com/search/dddd-gifs">Dddd GIFs</a></div>
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
             <!-- on load, I will have a loading icon show and then  -->
             <ul id="navigationBar">
                 <li>Home</li>
@@ -19,31 +23,31 @@
                 <li>Contact</li>
             </ul>
         </div>
-        
-
         <div id="loadingButtonDiv">
             <button id="loadingButton">Loading</button>
         </div>
 
+
+
         <div id="errorMessageDiv">
-                <!-- this will be generated in the javascript -->
-                <p id="errorMessage"></p>
+            <!-- this will be generated in the javascript -->
+            <p id="errorMessage"></p>
         </div>
-            <div id="dataEntryDiv">
-                <!-- validate this in the javascript and it will load the error message -->
-                <form action="./Success.html">
-                    <div id="nameDiv">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-                    <div id="ageDiv">
-                        <label for="age">Age:</label>
-                        <input type="text" id="age" name="age">
-                    </div>
-                    <input type="button" value="Submit">
-                </form>
-            </div>
-        
+        <div id="dataEntryDiv">
+            <!-- validate this in the javascript and it will load the error message -->
+            <form action="./Success.html">
+                <div id="nameDiv">
+                    <label for="name">Name:</label>
+                    <input type="text" id="nameInput" name="name">
+                </div>
+                <div id="ageDiv">
+                    <label for="age">Age:</label>
+                    <input type="text" id="ageInput" name="age">
+                </div>
+                <input id="submitButton" type="button" value="Submit">
+            </form>
+        </div>
+
         <script src="./main.js"></script>
 </body>
 
