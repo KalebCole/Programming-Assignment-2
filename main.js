@@ -3,7 +3,7 @@ Main logic for the program submission
 */
 window.addEventListener("load", () => {
     document.getElementById("errorMessageDiv").style.visibility = "hidden";
-    // document.getElementById("navigationBar").style.visibility = "hidden";
+    document.getElementById("navigationBar").style.visibility = "hidden";
 });
 
 
@@ -39,8 +39,8 @@ Extra Credit Codes
 */
 
 // this will make the unordered list visible if the user clicks the load list button
-// document.getElementById("loadingButtonDiv").addEventListener("click", () => {
-//     document.getElementById("loadingButtonDiv").style.visibility = "hidden";
-//     document.querySelector(".tenor-gif-embed").style.visibility = "hidden";
-//     document.getElementById("navigationBar").style.visibility = "visible";
-// });
+document.getElementById("loadingButtonDiv").addEventListener("click", () => {
+    document.getElementById("loadingButtonDiv").style.display = "none";
+    document.querySelector(".tenor-gif-embed").style.display = "none";
+    document.getElementById("navigationBar").style.visibility = "visible";
+});
