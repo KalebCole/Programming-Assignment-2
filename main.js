@@ -2,8 +2,8 @@
 Main logic for the program submission
 */
 window.addEventListener("load", () => {
-    document.getElementById("errorMessageDiv").style.visibility = "hidden";
-    document.getElementById("navigationBar").style.visibility = "hidden";
+    document.getElementById("errorMessageContainer").style.display = "none";
+    document.getElementById("navigationBar").style.display = "none";
 });
 
 
@@ -11,13 +11,13 @@ window.addEventListener("load", () => {
 document.getElementById("submitButton").addEventListener("click", () => {   
     if(validate()){
         console.log("Valid input");
-        document.getElementById("errorMessageDiv").style.visibility = "hidden";
+        document.getElementById("errorMessageContainer").style.display = "none";
         document.querySelector("#dataEntryDiv form").submit();
     }
     else{
         console.log("Invalid input");
-        document.querySelector("#errorMessageDiv #errorMessage").innerHTML = "Invalid input";
-        document.getElementById("errorMessageDiv").style.visibility = "visible";
+        document.querySelector("#errorMessageContainer #errorMessageDiv #errorMessage").innerHTML = "Invalid input";
+        document.getElementById("errorMessageContainer").style.display = "grid";
     }
 });
 
@@ -38,9 +38,16 @@ function validate() {
 Extra Credit Codes
 */
 
+/*
+Why to do this loading button?
+In practice, we may have to load a large amount of data from a database or from a file.
+This may take a while and the user may think that the program has crashed.
+To avoid this, we can display a loading button to let the user know that the program is working.
+
+*/
 // this will make the unordered list visible if the user clicks the load list button
 document.getElementById("loadingButtonDiv").addEventListener("click", () => {
     document.getElementById("loadingButtonDiv").style.display = "none";
     document.querySelector(".tenor-gif-embed").style.display = "none";
-    document.getElementById("navigationBar").style.visibility = "visible";
+    document.getElementById("navigationBar").style.display = "block";
 });
