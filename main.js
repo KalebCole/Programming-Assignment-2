@@ -2,7 +2,7 @@
 Main logic for the program submission
 */
 window.addEventListener("load", () => {
-    document.getElementById("errorMessageContainer").style.display = "none";
+    document.getElementById("errorMessageContainer").style.visibility = "hidden";
     document.getElementById("navigationBar").style.display = "none";
 });
 
@@ -11,17 +11,27 @@ window.addEventListener("load", () => {
 document.getElementById("submitButton").addEventListener("click", () => {   
     if(validate()){
         console.log("Valid input");
-        document.getElementById("errorMessageContainer").style.display = "none";
+        document.getElementById("errorMessageContainer").style.visibility = "hidden";
         document.querySelector("#dataEntryDiv form").submit();
     }
     else{
         console.log("Invalid input");
         document.querySelector("#errorMessageContainer #errorMessageDiv #errorMessage").innerHTML = "Invalid input";
-        document.getElementById("errorMessageContainer").style.display = "grid";
+        document.getElementById("errorMessageContainer").style.visibility = "visible";
     }
 });
 
-
+let counter = 0;
+document.getElementById("toggleErrorMessageButton").addEventListener("click", () => {
+    counter++;
+    if (counter % 2 == 1) {
+        document.getElementById("errorMessage").style.visibility = "hidden";
+        document.getElementById("toggleErrorMessageButton").innerHTML = "Show Error Message";
+    } else {
+        document.getElementById("errorMessage").style.visibility = "visible";
+        document.getElementById("toggleErrorMessageButton").innerHTML = "Hide Error Message";
+    }
+});
 
 function validate() {
     var nameInput = document.querySelector("#nameInput").value;
